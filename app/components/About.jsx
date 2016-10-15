@@ -5,7 +5,8 @@ var React = require('react');
 var About = (props) => {
     return (
         <div>
-            <h3>About</h3>
+            <h3 className="text-center">About</h3>
+            <hr></hr>
             <p>This is my Sweet React Weather App. The purpose of this app is to learn more about React. So far so good. More styling coming soon. Stay tuned or something.</p>
             <h5>
               Tools used for this beauty:
