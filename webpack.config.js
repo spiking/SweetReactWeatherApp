@@ -7,11 +7,11 @@ module.exports = {
     './app/app.jsx'
   ],
   externals: {
-      jquery: 'jQuery'
+    jquery: 'jQuery'
   },
   plugins: [
     new webpack.ProvidePlugin({
-      '$': 'jQuery',
+      '$': 'jquery',
       'jQuery': 'jquery'
     })
   ],
@@ -29,7 +29,8 @@ module.exports = {
       WeatherMessage: 'app/components/WeatherMessage.jsx',
       About: 'app/components/About.jsx',
       Examples: 'app/components/Examples.jsx',
-      openWeatherMap: 'app/api/openWeatherMap.jsx'
+      openWeatherMap: 'app/api/openWeatherMap.jsx',
+      ErrorModal: 'app/components/ErrorModal.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
@@ -45,5 +46,5 @@ module.exports = {
       }
     ]
   },
-  devtool: 'inline-source-map'
+  devtool: 'cheap-module-eval-source-map'
 };
