@@ -1,3 +1,5 @@
+// Testing promises
+
 function getTempCallback(location, callback) {
     callback(undefined, 78);
     callback('City not found');
